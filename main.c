@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <SDL.h>
+#include "core/game-core.h"
 
-int main() {
-    if (SDL_Init(0) != 0) {
-        printf("%s\n", SDL_GetError());
-        exit(1);
-    }
+int main()
+{
+    GameCore_Init();
     printf("Hello\n");
     return 0;
 }

@@ -4,7 +4,7 @@ project (c-hedgehog)
 
 add_subdirectory(libs/SDL2 EXCLUDE_FROM_ALL)
 
-add_executable(game main.c)
+add_executable(game main.c core/game-core.h core/game-core.c)
 
 # For reference: https://wiki.libsdl.org/SDL2/README/cmake
 # SDL2::SDL2main may or may not be available. It is e.g. required by Windows GUI applications
